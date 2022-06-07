@@ -1,10 +1,9 @@
 ﻿using Interface.Interfaces;
 
-namespace Interface
+namespace Interface;
+
+public record DieselCar : ICar
 {
-    public record DieselCar : ICar
-    {
-        public string Color { get; init; }
-        public int Km { get; init; }
-    }
+    public string Color { get; set; }
+    public int Km { get; init; }
 }

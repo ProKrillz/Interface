@@ -7,5 +7,9 @@ public class Program
         DieselCar car1 = new DieselCar { Color = "Black", Km = 140 };
         Console.WriteLine(car);
         Console.WriteLine(car1);
+        Car car3 = new Car { Color = "Green", Km = 55, Hk = 120};
+        Console.WriteLine(car3.GetInfo());
+        Car car4 = car3;
+        //car4 og 3 har pointer til samme object i heapen.
     }
 }
