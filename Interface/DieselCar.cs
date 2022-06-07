@@ -4,6 +4,6 @@ namespace Interface;
 
 public record DieselCar : ICar
 {
-    public string Color { get; set; }
+    public Colors Color { get; set; }
     public int Km { get; init; }
 }
